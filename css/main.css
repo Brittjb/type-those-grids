@@ -15,14 +15,63 @@ h1 {
   margin: 1.5rem .5rem;
 }
 
+figure {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 70rem 5rem;
+}
+}
 article {
   display: grid;
+  gap: .75rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 3fr);
-  gap: 0.75rem;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+  "temple  rhodes  babylon";
 }
 
 .picture2 {
+  gap: .75rem;
+}
+
+.picture3 {
   grid-column: 2;
   grid-row: 1;
+  gap: .75rem;
+}
+
+.picture4 {
+  grid-column: 3;
+  grid-row: 1;
+  gap: .75rem;
+}
+
+.artemis {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.rhodes {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.babylon {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+dl {
+  font-size: 1.8rem;
+  font-style:italic;
+  font-weight: normal;
+}
+
+dt {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+dd {
+  font-size: 1rem;
+  font-style: normal;
 }
